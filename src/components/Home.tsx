@@ -14,12 +14,12 @@ export default function HomeSection() {
               A Passionate web developer with expertise in building dynamic,
               responsive, and user-friendly websites.
             </p>
-            <button
+            <a
               href="#AboutMe"
               className="mt-6 bg-emerald-500 text-white py-3 px-6 rounded-lg text-lg font-medium shadow hover:bg-indigo-600"
             >
               Get In Touch
-            </button>
+            </a>
           </div>
 
           {/* Image Section */}
