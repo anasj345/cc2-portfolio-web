@@ -1,0 +1,79 @@
+/* Base */
+html {
+  height: 100%;
+}
+
+body {
+  background: #000;
+  position: relative;
+  height: 100%;
+}
+
+/* Arrow container */
+.arrow-container {
+  display: block;
+  width: 50px; /* Reduced size */
+  height: 50px; /* Reduced size */
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(0deg);
+  transition: all 0.4s ease;
+}
+
+.arrow-container:hover {
+  cursor: pointer;
+}
+
+.arrow-container:hover .arrow {
+  top: 50%;
+}
+
+.arrow-container:hover .arrow:before {
+  transform: translate(-50%, -50%) rotateZ(-30deg);
+}
+
+.arrow-container:hover .arrow:after {
+  transform: translate(-50%, -50%) rotateZ(30deg);
+}
+
+/* Arrow */
+.arrow {
+  position: absolute;
+  left: 50%;
+  transition: all 0.4s ease;
+}
+
+.arrow:before,
+.arrow:after {
+  content: "";
+  display: block;
+  position: absolute;
+  transform-origin: bottom right;
+  background: #000000;
+  width: 2px; /* Reduced width */
+  height: 25px; /* Reduced height */
+  border-radius: 10px;
+  transform: translate(-50%, -50%) rotateZ(-45deg);
+}
+
+.arrow:after {
+  transform-origin: bottom left;
+  transform: translate(-50%, -50%) rotateZ(45deg);
+}
+
+/* Arrow opacity and position for each nth-child */
+.arrow:nth-child(1) {
+  opacity: 0.3 * 1; /* Adjusted for the first arrow */
+  top: calc(10px + (100% * 1 / 5)); /* Adjusted for smaller size */
+}
+
+.arrow:nth-child(2) {
+  opacity: 0.3 * 2; /* Adjusted for the second arrow */
+  top: calc(10px + (100% * 2 / 5)); /* Adjusted for smaller size */
+}
+
+.arrow:nth-child(3) {
+  opacity: 0.3 * 3; /* Adjusted for the third arrow */
+  top: calc(10px + (100% * 3 / 5)); /* Adjusted for smaller size */
+}

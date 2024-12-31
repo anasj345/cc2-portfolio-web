@@ -1,11 +1,11 @@
-import AboutMe from "../components/AboutMe";
-import Contact from "../components/Contact";
-import Experience from "../components/Experience";
-import Home from "../components/Home";
-import Navbar from "../components/Navbar";
-import Portfolio from "../components/Portfolio";
-import Skills from "../components/Skills";
-import Testimonials from "../components/Testimonials";
+import AboutMe from "../components/AboutMe.tsx";
+import Contact from "../components/Contact.tsx";
+import Experience from "../components/Experience.tsx";
+import Home from "../components/Home.tsx";
+import Navbar from "../components/Navbar.tsx";
+import Portfolio from "../components/Portfolio.tsx";
+import Skills from "../components/Skills.tsx";
+import Testimonial from "../components/Testimonial.tsx";
 
 export default function MainLayout() {
   return (
@@ -16,12 +16,10 @@ export default function MainLayout() {
       <Skills />
       <Portfolio />
       <Experience />
-      <Testimonials />
+      <Testimonial />
       <Contact />
       <footer className="text-center py-6">
-        <p className="text-gray-500 text-sm">
-          © 2024 Anas Juliansyah. All rights reserved.
-        </p>
+        <p className="text-gray-500 text-sm">© 2024 Anas Juliansyah.</p>
       </footer>
     </>
   );
