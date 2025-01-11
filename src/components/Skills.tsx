@@ -47,8 +47,8 @@ export default function SkillsSection() {
         <a href="https://react.dev/" target="_blank">
           <img src="logo-react.svg" alt="Logo react" className="h-10 w-10" />
         </a>
-        <a href="https://nextjs.org/" target="_blank">
-          <img src="logo-next-js.svg" alt="Logo nectjs" className="h-10 w-10" />
+        <a href="https://nodejs.org/" target="_blank">
+          <img src="logo-nodejs.png" alt="Logo nodeJS" className="h-10 w-10" />
         </a>
       </div>
     </section>
